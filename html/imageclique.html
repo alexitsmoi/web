@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--ceci  n'est pas une balise mais un directive
+Indique la version de HTML utilisé: HTML5
+-->
+
+<!--ceci  est commentaire-->
+
+<!--Balise paires/ Impaires-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alexandre Daguindau</title>
+    <meta name="author" content="Alexandre Daguindau">
+    <meta name="description" content="juste another website but personnal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="icon" type="image/x-icon" href="/media/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/media/img/logo.png" alt="logo avec un A et un D">
+            <ul>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Exercices</li>
+                        <li><a href="../html/Exercice_image_cliquable.html">images cliquable</a></li>
+                        <li><a href="../html/exercice_mise_en_forme_texte.HTML">mise en forme</a></li>
+                        <li><a href="../html/Exercice_Tableau.HTML">tableau</a></li>
+                        <li><a href="../html/Exercice_Tableau_mail_1.HTML">tableau mail</a></li>
+                        <li><a href="../html/exerciceliste.html">liste</a></li>
+                    </ul>
+                </li>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Cours</li>
+                        <li><a href="../html/formulaire.html">Formulaire</a></li>
+                        <li><a href="../html/Haut_Bas.HTML">Haut Bas</a></li>
+                        <li><a href="../html/imageclique.html">Image click</a></li>
+                        <li><a href="../html/Images.html">Images</a></li>
+                        <li><a href="../html/modele.HTML">modèles</a></li>
+                        <li><a href="../html/multimedia.html">multimedia</a></li>
+                        <li><a href="../html/S%C3%A9mantique_structurer_page.html">structure page</a></li>
+                        <li><a href="../html/tableaux.html">tableau</a></li>
+                        <li><a href="../html/Test.html">test</a></li>
+                        <li><a href="../html/Test_envoi.html">test-envoie</a></li>
+                        <li><a href="../html/traitement_formulaire.html">traitement formulaire</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+	<h2>Utilisation de la balise aréa pour crée une image cliquable</h2>
+	<p><strong>Consigne:</strong> Utiliser une image repésentant les 4 saison et faire que si l'on clique sur une des saisons on nous montre un calendrier des fruit et légume de saisons </p>
+
+<!--permet de decouper une image pour dire que telle zone de l'image fais telle chose-->
+	<img src="/media/img/4saison.png" width="600" height="600" alt="plan" usemap="#logo"/>
+	<map name="logo">
+	<area shape="rect" coords="0,0,300,300" href="images/fruit_et_legume_automne.png" alt="automne" target="blank">
+	<area shape="rect" coords="300,300,600,0" href="images/été_fruit_légume.png" alt="été" target="blank">
+	<area shape="rect" coords="300,300,600,600" href="images/fruit_et_légume_hiver.png" alt="hiver" target="blank">
+	<area shape="rect" coords="0,600,300,300" href="images/fruit_et_legume_printmeps.png" alt="pintemps" target="blank">
+	<!-- triangle est un shape de type poly-->	
+<hr>
+<br><a href="./index.html">lien vers l'accueil</a><br>
+<hr>
+<!--permet de decouper une image pour dire que telle zone de l'image fais telle chose-->
+<!-- triangle est un shape de type poly-->
+<h1>Consignes:</h1><br>
+	<img src="/media/img/cons.jpg" width="600"><br>  
+	<img src="/media/img/image_exo.jpg" alt="Plan"  usemap="#formes" width="700" />
+	<map name="formes">
+	    <area shape="circle" coords="134,134,110"  href="https://www.google.fr/" alt="google">
+	    <area shape="rect" coords="687,238,438,35"  href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal" alt="Wiki">
+	    <area shape="rect" coords="?,?,?,?" href="" alt="triangle">
+	</map>
+<hr>
+<br><a href="./index.html">lien vers l'accueil</a><br>
+<hr>
+        <a href="../index.html">lien vers l'accueil</a>
+<footer><a href="http://copyright.be" target="_blank">Copyright © 2020 Sémantique_structurer - Tous droits réservés</a><br>Daguindau<br>Alexandre<br><strong>Contact:</strong>alexdaguindau.pro@gmail>com</footer>
+<hr>
+
+</body>
+</html>

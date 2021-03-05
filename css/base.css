@@ -1,0 +1,114 @@
+/*base de toutes les pages*/
+/* dernière modification le 05.03.2021*/
+/*made by alexandre Daguindau*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+   overflow-x: hidden; 
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    padding: 10px
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+/*menu déroulant*/
+
+.menu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    padding: 10px;
+    width: 150px
+}
+
+.menu:hover{
+    visibility: visible;
+
+}
+
+
+.menu li:first-child {
+    position: relative;
+    visibility: visible;
+    font-size: 1.6em;
+    background-color: white;
+    padding-left: 0px;
+}
+
+.menu li a:hover{
+    
+}
+
+#first {
+    margin-right: 190px;
+}
+
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+
+
+
+nav ul li {
+        margin-right: 50px;
+        list-style: none;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+}
+nav ul li a {
+        text-decoration:none;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.8em;
+}
