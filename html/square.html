@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--ceci  n'est pas une balise mais un directive
+Indique la version de HTML utilisé: HTML5
+-->
+
+<!--ceci  est commentaire-->
+
+<!--Balise paires/ Impaires-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alexandre Daguindau</title>
+    <meta name="author" content="Alexandre Daguindau">
+    <meta name="description" content="juste another website but personnal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="icon" type="image/x-icon" href="../media/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../media/img/logo.png" alt="logo avec un A et un D">
+            <ul>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Exercices</li>
+                        <li><a href="../html/Exercice_image_cliquable.html">images cliquable</a></li>
+                        <li><a href="../html/exercice_mise_en_forme_texte.HTML">mise en forme</a></li>
+                        <li><a href="../html/Exercice_Tableau.HTML">tableau</a></li>
+                        <li><a href="../html/Exercice_Tableau_mail_1.HTML">tableau mail</a></li>
+                        <li><a href="../html/exerciceliste.html">liste</a></li>
+                    </ul>
+                </li>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Cours</li>
+                        <li><a href="../html/formulaire.html">Formulaire</a></li>
+                        <li><a href="../html/Haut_Bas.HTML">Haut Bas</a></li>
+                        <li><a href="../html/imageclique.html">Image click</a></li>
+                        <li><a href="../html/Images.html">Images</a></li>
+                        <li><a href="../html/modele.HTML">modèles</a></li>
+                        <li><a href="../html/multimedia.html">multimedia</a></li>
+                        <li><a href="../html/S%C3%A9mantique_structurer_page.html">structure page</a></li>
+                        <li><a href="../html/tableaux.html">tableau</a></li>
+                        <li><a href="../html/Test.html">test</a></li>
+                        <li><a href="../html/Test_envoi.html">test-envoie</a></li>
+                        <li><a href="../html/traitement_formulaire.html">traitement formulaire</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+<hr>
+<!--permet de decouper une image pour dire que telle zone de l'image fais telle chose-->
+    <style type="text/css">
+        .principale 
+        {
+            width: 600px;
+            height: 400px;
+            border: solid 1px black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .quart 
+        {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+        }
+
+        .quart:first-child 
+        {
+            background-color: red;
+        }
+
+        .quart:last-child {
+            background-color: rgba(0,255,0,1);
+        }
+
+        .globale 
+        {
+            width: 600px;
+            height: 400px;
+            border: solid 1px black;
+        }
+
+        .demi:first-child
+        {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+        }
+
+        .demi:last-child
+        {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            background-color: rgba(0,255,0,1);
+            margin-left: 300px;
+        }
+
+    </style>
+    <hr>
+
+    <main>
+        <h2></h2>
+        <div class="principale">
+            <div class="quart"></div>
+            <div class="quart"></div>
+            <div class="quart"></div>
+            <div class="quart"></div>
+        </div>
+        <hr>
+
+        <h2></h2>
+        <div class="globale">
+            <div class="demi"></div>
+            <div class="demi"></div>
+        </div>
+        <hr>
+<canvas id="Canvas1" width="300" height="200"  style="border:solid 1px black;"></canvas>
+<canvas id="canvas2" style="border: solid 1px black;"></canvas>
+
+<script type="text/javascript">
+            //Récupérer l'objet canvas par son ID
+            var canvas = document.getElementById("Canvas1");
+            var canvasdeux = document.getElementById("Canvas2");
+
+            var hauteur = Canvas1.height;
+            var largeur = Canvas1.width;
+            //init de la canvas 1
+            hauteur = hauteur/2;//100
+            largeur = largeur/4;//37.5          
+             //source du document
+            console.log(document.location.href);
+            // rechercher des variables dans le document
+            console.log(document.location.search);
+            //id du canvas
+            console.log('#id du canvas', Canvas1.id);
+            //nom du canvas
+            console.log('#nom du canvas', canvas.name);
+
+            const pas = .125;
+            //Créer un objet de dessin sur le canvas
+            var part = 1/8;
+
+            var ctx = canvas.getContext("2d");
+            var ctx2 = canvas2.getContext("2d");
+
+
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(0,0,largeur,hauteur);
+            part = part + pas;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur,0,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur*2,0,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur*3,0,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur*3,hauteur,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur*2,hauteur,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(largeur,hauteur,largeur,hauteur);
+            part = pas + part;
+            ctx.fillStyle = "rgba( 0, 0, 255,"+ part +")";
+            ctx.fillRect(0,hauteur,largeur,hauteur);
+            //init canvas N2 
+            canvas2.height = hauteur;
+            canvas2.width = largeur;
+            //division par 4 pour le Canvas 2
+            hauteur = hauteur/2;
+            largeur = largeur/2;
+
+
+            ctx2.fillStyle = "#FF0000";//red
+            ctx2.fillRect(0,0,largeur,hauteur);
+
+            ctx2.fillStyle = "#0000FF";//blue
+            ctx2.fillRect(0,hauteur,largeur,hauteur);
+
+            ctx2.fillStyle = "#00FF00";//green
+            ctx2.fillRect(largeur,hauteur,largeur,hauteur);
+
+            ctx2.fillStyle ="#FFFF00";//yellow
+            ctx2.fillRect(largeur,0,largeur,hauteur);
+
+
+        </script> 
+        <hr>
+<canvas id="Canvas3" width="300" height="200" style="border: solid 1px black;"></canvas>
+<script type="text/javascript">
+            //Récupérer l'objet canvas par son ID
+            var rng = document.getElementById("Canvas3");
+
+            var h = Canvas3.height;
+            var l = Canvas3.width;
+            var r = Math.floor(Math.random() * 256);           
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            //init de la canvas 1
+            h = h/2;//100
+            l = l/4;//75   
+
+            var ctx3 = rng.getContext("2d");
+
+            console.log(r);
+            console.log(g);
+            console.log(b);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(0,0,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            console.log(r);
+            console.log(g);
+            console.log(b);
+            ctx3.filllStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l,0,l,h);
+            r = Math.floor(Math.random() * 256); 
+            g = Math.floor(Math.random() * 256);          
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l*2,0,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l*3,0,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l*3,h,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l*2,h,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(l,h,l,h);
+            r = Math.floor(Math.random() * 256);           
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            ctx3.fillStyle = "rgba( "+ r +","+ g +","+ b +",1)";
+            ctx3.fillRect(0,h,l,h);
+        </script> 
+<hr>
+
+<canvas id="canvasy" width="300" height="200" style="border: solid 1px black; "></canvas>
+<script type="text/javascript">
+    var canvasy = document.getElementById("canvasy");
+
+
+    var ctx = canvasy.getContext("2d");
+
+
+ 
+    ctx.beginPath();
+    ctx.moveTo(300,0);
+    ctx.lineTo(0,200);
+    console.log(ctx.strokeStyle);
+    ctx.strokeStyle= "black";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(150,0);
+        ctx.lineWidth = 1;
+    ctx.lineTo(150,200);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(0,100);
+    ctx.lineTo(300,100);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(300, 200);
+    ctx.strokeStyle="green";
+    ctx.stroke();
+
+</script>
+<hr>
+<canvas id="canvasrond" width="300" height="200" style="border: solid 1px blue; "></canvas>
+<script type="text/javascript">
+    var canvasrond = document.getElementById("canvasrond");
+
+    l = canvasrond.width/2;
+    h = canvasrond.height/2;
+    var  r= h * 0.8;
+    var ctx = canvasrond.getContext("2d");
+
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.arc(l, h, r, 0, 2 * Math.PI);
+    ctx.strokeStyle="green";
+    ctx.stroke();
+    r = h * 0.6;
+        ctx.beginPath();
+    ctx.arc(l , h, r, 0, 2 * Math.PI);
+    ctx.strokeStyle="yellow";
+    ctx.stroke()
+    r = h * 0.4;
+        ctx.beginPath();
+    ctx.arc(l, h ,r , 0, 2 * Math.PI);
+    ctx.strokeStyle="red";
+    ctx.fillStyle="blue";
+    ctx.fill();
+    ctx.stroke();
+</script>
+ 
+<hr>
+<a href="../index.html">lien vers l'accueil</a>
+<footer><a href="http://copyright.be" target="_blank">Copyright © 2020 Sémantique_structurer - Tous droits réservés</a><br>Daguindau<br>Alexandre<br><strong>Contact:</strong>alexdaguindau.pro@gmail>com</footer>
+<hr>
+</body>
+</html>
