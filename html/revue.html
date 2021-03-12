@@ -1,0 +1,873 @@
+<!DOCTYPE html><!-- ceci n'est pas une balise mais une directive
+	Indique la version de HTML utilisée : HTML5
+-->
+<!-- ceci est un commentaire-->
+<html>
+<head>
+    <!-- en-tête de la page-->
+    <title>Revue des cours de web</title>
+    <meta charset="utf-8">
+    <!--intégrer un fichier CSS externe-->
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <!--Afficher une image dans l'onglet de sa page-->
+    <link rel="shortcut icon" type="image/c-icon" href="../images/caramini.png">
+    <!--encodage de la page-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .page {
+            background-color: white;
+        }
+
+        body {
+            font-family: 'Recursive', sans-serif;
+        }
+
+        .majeur {
+            background-color: ;
+            border: none;
+        }
+
+        .maj {
+            font-size: 1.8em;
+            padding: 20px;
+            margin-left: 600px;
+            margin-top: 100px;
+        }
+
+        .revue {
+            margin: auto;
+            margin-top: 50px;
+            width: 350px;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 1em;
+        }
+
+        .revue legend {
+            margin-right: 100px;
+            width: 400px;
+            font-weight: bold;
+            border-bottom: solid 1px black;
+            font-family: 'Shippori Mincho', serif;
+        }
+    </style>
+
+</head>
+
+<body class="page">
+    <!-- corps de la page -->
+    <header>
+        <nav>
+            <img src="../media/img/logo.png" alt="logo avec un A et un D">
+            <ul>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Exercices</li>
+                        <li><a href="../html/Exercice_image_cliquable.html">images cliquable</a></li>
+                        <li><a href="../html/exercice_mise_en_forme_texte.HTML">mise en forme</a></li>
+                        <li><a href="../html/Exercice_Tableau.HTML">tableau</a></li>
+                        <li><a href="../html/Exercice_Tableau_mail_1.HTML">tableau mail</a></li>
+                        <li><a href="../html/exerciceliste.html">liste</a></li>
+                    </ul>
+                </li>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Cours</li>
+                        <li><a href="../html/formulaire.html">Formulaire</a></li>
+                        <li><a href="../html/Haut_Bas.HTML">Haut Bas</a></li>
+                        <li><a href="../html/imageclique.html">Image click</a></li>
+                        <li><a href="../html/Images.html">Images</a></li>
+                        <li><a href="../html/modele.HTML">modèles</a></li>
+                        <li><a href="../html/multimedia.html">multimedia</a></li>
+                        <li><a href="../html/S%C3%A9mantique_structurer_page.html">structure page</a></li>
+                        <li><a href="../html/tableaux.html">tableau</a></li>
+                        <li><a href="../html/Test.html">test</a></li>
+                        <li><a href="../html/Test_envoi.html">test-envoie</a></li>
+                        <li><a href="../html/traitement_formulaire.html">traitement formulaire</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <u>
+            <H2>En HTML :</H2>
+        </u>
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Definir web:</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Definir internet:</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Definir html:</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Definir css:</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Pourquoi separer html et css :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <fieldset class="majeur">
+
+            <legend class="maj">balises universelles :</legend>
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise html:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise head:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise style:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise body:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise main:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre les balises header et footer:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre la balise h :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre les balises p et pre:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre les balises ul, ol et li:</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">Strong, Emphasis et Mark</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+        </fieldset>
+
+        <fieldset class="majeur">
+            <legend class="maj">atribut :</legend>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre l'atribut type :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre l'atribut width :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre l'atribut height :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre l'atribut href :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="revue">
+
+                    <legend style="text-align: left; display: inline;">connaitre l'atribut target :</legend>
+
+                    <input type="radio" id="Ne maitrise pas " name="maitrise">
+                    <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                    <input type="radio" id="Maitrise partiel" name="maitrise">
+                    <label for="Maitrise partiel">Maitrise partiel</label>
+
+                    <input type="radio" id="Maitriser" name="maitrise">
+                    <label for="Maitriser">Maitriser</label>
+                </fieldset>
+            </form>
+
+        </fieldset>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">la mise en valeur du texte :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">listes ordonnées et non-ordonnées </legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">listes imbriqués</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">liens internes et liens externes</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Les ancres</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">validateur HTML et CSS </legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les formulaires</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les tableaux</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">l'argument border :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <u>
+            <H2>En CSS :</H2>
+        </u>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les Sélecteurs :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les propriétés :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les valeurs :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">où ecrire le CSS :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Utilitaire jsbin.com :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les atributs class et ID :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">connaitre l'atribut style :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">connaitre les balises div et span :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les elements de type block et inline :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">les selecteurs avancé :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">la notion d'héritage :</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">formatage du texte</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">positionner des elements</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">propriété font</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">propriete line-height</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">Les « web safe fonts »</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">la propriét" color</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class="revue">
+
+                <legend style="text-align: left; display: inline;">l'opacité d'un texte</legend>
+
+                <input type="radio" id="Ne maitrise pas " name="maitrise">
+                <label style="text-align: left;" for="Ne maitrise pas ">Ne maitrise pas </label>
+
+                <input type="radio" id="Maitrise partiel" name="maitrise">
+                <label for="Maitrise partiel">Maitrise partiel</label>
+
+                <input type="radio" id="Maitriser" name="maitrise">
+                <label for="Maitriser">Maitriser</label>
+            </fieldset>
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <a href="http://copyright.be" target="_blank">Copyright © 2020 - Tous droits réservés</a><br />
+        <a href="mailto:t.lejeune@ludus-academie.com?subject=test_envoi" ....> envoyez-moi un mail pour plus d'information</a>
+    </footer>
+
+</body></html>
