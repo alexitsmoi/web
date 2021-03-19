@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--ceci  n'est pas une balise mais un directive
+Indique la version de HTML utilisé: HTML5
+-->
+
+<!--ceci  est commentaire-->
+
+<!--Balise paires/ Impaires-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alexandre Daguindau</title>
+    <meta name="author" content="Alexandre Daguindau">
+    <meta name="description" content="juste another website but personnal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="console">
+
+
+
+<!--permet de decouper une image pour dire que telle zone de l'image fais telle chose-->
+<main>
+    <img src="bleu.jpg" alt="bleu" id="bleu">
+    <img src="rouge.jpg" alt="rouge" id="rouge">
+    <img src="saumon.jpg" alt="saumon" id="saumon">
+    <img src="rose.jpg" alt="rose" id="rose">
+    <img src="vert.jpg" alt="vert" id="vert">
+    <br>
+    <button id="btn" style="width: 100px; height: 50px" onclick="imag()">Générer</button>
+    <br>
+    <hr>
+    <img id="btnn">
+    <script type="text/javascript">
+
+        //new imagage()
+        //object image
+        //src = "imagex"
+        //document.write
+        //afficher l objet
+   //for(i = 0; i <= 10; i++) {console.log(i);;}
+   /*
+    var tabTest = ["kc","pv","bf"];
+    console.log(tabTest);
+    console.table(tabTest);
+    console.log(tabTest.length);
+    console.log(tabTest[0]);
+    */
+            
+            function imag(){
+                 var number=Math.round(Math.random()*5)+1;
+                 console.log(number);
+                if ((number == 1 )){
+                    console.log('bleu');
+                    document.getElementById('btn').style.backgroundImage="url(bleu.jpg)";
+                    document.getElementById('btnn').src="bleu.jpg";
+
+                }
+                else 
+                    if ((number == 2)) {
+                    console.log('rouge');
+                    document.getElementById('btn').style.backgroundImage="url(rouge.jpg)";
+                    document.getElementById('btnn').src="rouge.jpg";
+                }
+                else 
+                    if ((number == 3)) {
+                    console.log('saumon');
+                    document.getElementById('btn').style.backgroundImage="url(saumon.jpg)";
+                    document.getElementById('btnn').src="saumon.jpg";
+                }
+                else 
+                    if ((number == 4)) {
+                    console.log('rose');
+                    document.getElementById('btn').style.backgroundImage="url(rose.jpg)";
+                    document.getElementById('btnn').src="rose.jpg";
+                }
+                else 
+                    if ((number == 5)) {
+                    console.log('vert');
+                    document.getElementById('btn').style.backgroundImage="url(vert.jpg)";
+                    document.getElementById('btnn').src="vert.jpg";
+                }
+                else {
+                    console.log('KCPVBF');
+                }
+            }
+</script>
+<div ></div>
+<script type="text/javascript">
+
+               function console(){
+                var chemin ="img";
+                var ext =".jpg";
+                var monsrc;
+                var idImg =" ">;
+            for(i=1;  i <= 5; i++){
+                monsrc = chemin+ i +ext;                 
+                idImg = "idImg"+i;
+                document.write("<img src'"+monsrc+"' id="+idImg+" alt='"+monsrc+"'>");
+            }
+</script>
+</main>
+
+
+
+
+
+
+<hr>
+<a href="../index.html">lien vers l'accueil</a>
+<footer><a href="http://copyright.be" target="_blank">Copyright © 2020 Sémantique_structurer - Tous droits réservés</a><br>Daguindau<br>Alexandre<br><strong>Contact:</strong>alexdaguindau.pro@gmail>com</footer>
+<hr>
+</body>
+</html>

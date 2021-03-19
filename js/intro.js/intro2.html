@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--ceci  n'est pas une balise mais un directive
+Indique la version de HTML utilisé: HTML5
+-->
+
+<!--ceci  est commentaire-->
+
+<!--Balise paires/ Impaires-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alexandre Daguindau</title>
+    <meta name="author" content="Alexandre Daguindau">
+    <meta name="description" content="juste another website but personnal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="icon" type="image/x-icon" href="/media/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div onclick="console()" style="background-color: blue; width: 100px; height: 50px"></div>
+	<script type="text/javascript">
+	    function console(){
+	var chemin ="img";
+	var ext =".jpg";
+	var monsrc = chemin + ext;
+	var idImg =" ";
+
+	for(i=1;  i <= 5; i++){
+	monsrc = chemin+ i +ext;                 
+	idImg="Image"+i;
+	document.write("<IMG src='' alt=",idImg," id=",idImg,"/>");
+	    }
+	</script>
+
+</body>
