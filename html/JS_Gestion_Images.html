@@ -1,0 +1,160 @@
+<!DOCTYPE html><!-- ceci n'est pas une balise mais une directive
+	Indique la version de HTML utilisée : HTML5
+-->
+<!-- ceci est un commentaire-->
+<html>
+<head>
+    <!-- en-tête de la page-->
+    <title>Gestion des images en javascript</title>
+    <!--encodage de la page-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/base.css">
+    <!--intégrer un fichier CSS externe-->
+    <!--<link rel="stylesheet" type="text/css" href="..css/monstyle.css">-->
+    <!--Afficher une image dans l'onglet de sa page-->
+    <style>
+        #btn1 {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+        <nav>
+            <img src="../media/img/logo.png" alt="logo avec un A et un D">
+            <ul>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Exercices</li>
+                        <li><a href="../html/Exercice_image_cliquable.html">images cliquable</a></li>
+                        <li><a href="../html/exercice_mise_en_forme_texte.HTML">mise en forme</a></li>
+                        <li><a href="../html/Exercice_Tableau.HTML">tableau</a></li>
+                        <li><a href="../html/Exercice_Tableau_mail_1.HTML">tableau mail</a></li>
+                        <li><a href="../html/exerciceliste.html">liste</a></li>
+                    </ul>
+                </li>
+                <li id="first">
+                    <ul class="menu">
+                        <li>Cours</li>
+                        <li><a href="../html/formulaire.html">Formulaire</a></li>
+                        <li><a href="../html/Haut_Bas.HTML">Haut Bas</a></li>
+                        <li><a href="../html/imageclique.html">Image click</a></li>
+                        <li><a href="../html/Images.html">Images</a></li>
+                        <li><a href="../html/modele.HTML">modèles</a></li>
+                        <li><a href="../html/multimedia.html">multimedia</a></li>
+                        <li><a href="../html/S%C3%A9mantique_structurer_page.html">structure page</a></li>
+                        <li><a href="../html/tableaux.html">tableau</a></li>
+                        <li><a href="../html/Test.html">test</a></li>
+                        <li><a href="../html/Test_envoi.html">test-envoie</a></li>
+                        <li><a href="../html/traitement_formulaire.html">traitement formulaire</a></li>
+                        <li><a href="../html/square.html">Canvas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h1>Gestion des images en javascript</h1>
+        <!--<img src="../images/TOM.png" id="img1" alt="img1" width="100" height="100">-->
+
+        <!-- afficher images en js avec document.write-->
+        <script type="text/javascript">
+            /*document.write("<img src='../images/TOM.png'>");
+			on definit plusieurs variables
+			on veut afficher 5 images appellées img1.png... img5.png
+			en dessous des images nous afficherons un bouton qui affichera aléatoirement une des 5 images
+			 le bouton peut ètre affiché de deux façons : 
+			 on écrit la balise button ou on génere dynamiquement notre bouton 
+			 première methode : se servir d'une balise img statique(on ecrit la balise img et on modifiera son src)
+			 deuxième methode : generer dynamiquement la balise img et ses attributs*/
+
+            //declaration des variables
+            var idImg = ""; //identifiant
+            var chemin = "../media/img/img"; //chemin relatif avec le debut du nom de mon fichier
+            var ext = ".jpg"; //extension de mon fichier
+            var chemindeux = ""; //chemin relatif avec le debut du nom de mon fichier
+
+            // on veut afficher les 5 images 
+            for (i = 1; i <= 5; i++) {
+                idImg = "idImg" + i; //on concantène "idImg" avec i
+                monsrc = chemin + i + ext; // on concatène chemin,i et ext dans monsrc
+                //console.log(monsrc);
+                //on affecte une balise img dans la variable chemindeux
+                //chemindeux="<IMG src="+monsrc+" alt="+idImg+" id="+idImg+" width=100 height=100/>";
+                //document.write("<IMG src=",monsrc," alt=",idImg," id=",idImg," width=100 height=100/>");
+                //document.write(chemindeux);//afficher l'images
+
+                //création dynamique de l'image
+                var img = document.createElement('img'); //Créer la balise IMG
+                img.setAttribute('src', monsrc); // Initialiser  src equivalent de img.src = monsrc
+                img.setAttribute('id', 'img1'); // Initialiser id 
+                img.setAttribute('alt', 'img1'); // Initialiser alt
+                img.setAttribute('width', '100'); // Initialiser width
+                img.setAttribute('height', '100'); // Initialiser height
+                //.appendChild(img), on ajoute l'objet img au body du document
+                document.getElementsByTagName("body")[0].appendChild(img); //("body")[0] signifie qu'il faut prendre le premier body de la page et uniquement le premier si on en a plusieurs
+            }
+
+            // fonction de generation aléatoire du src de l'image qui est generée dynamiquement
+            function imgalea() {
+                console.log(imgalea2);
+                // generation d'un chiffre aléatoirement entre 1 et 5
+                var nbralea = Math.round(Math.random() * 4) + 1;
+                //console.log(nbralea);
+                monsrc = "../media/img/img" + nbralea + ".jpg";
+                //console.log(monsrc);
+                document.getElementById('btnn').src = monsrc;
+                //console.log(nbralea);
+                //generer la balise img et son images dynamiquement ensuite si l'image dynalique a déjà été generer on va modifier l'atribut src de notre image sinon on doit créer notre objet image et lui onner l'atribut src generer avec le random, alt pour dire que c'est une image generer dynamiquement et aléatoirement et l'ajouter au body
+                if (document.getElementById('imgalea2')) {
+                    console.log('kcpvbf');
+                    document.getElementById('imgalea2').src = monsrc;
+                } //Si l'image dynamique a déjà été générée	
+                else {
+                    console.log('jesaispas');
+                    var imgalea2 = document.createElement('img');
+                    imgalea2.setAttribute('src', monsrc);
+                    imgalea2.setAttribute('id', 'imgalea2');
+                    imgalea2.setAttribute('title', 'texte à definir');
+                    imgalea2.setAttribute('alt', 'imgalea2');
+                    imgalea2.setAttribute('width', '100');
+                    imgalea2.setAttribute('height', '100');
+                    document.getElementsByTagName("body")[0].appendChild(imgalea2);
+                    console.log(imgalea2);
+                }
+
+            }
+            // creation d'un objet de type bouton
+            var btn = document.createElement('button');
+            // ajouter atribut id
+            btn.setAttribute('id', 'btn1');
+            // on met le texte au bouton grace au .innerHTML
+            btn.innerHTML = 'Afficher Aléatoirement';
+            // definir l'evenement onclick du bouton
+            btn.setAttribute('onclick', 'imgalea()');
+            //ON INTEGRE LE BOUTTON DANS LE body du document
+            document.getElementsByTagName("body")[0].appendChild(btn);
+
+            //creation statique d'une image aléatoire
+            var monImageAléatoireStatique = document.createElement('img');
+            //ajouter un atribut 
+            monImageAléatoireStatique.setAttribute('id', 'btnn');
+            monImageAléatoireStatique.setAttribute('src', '');
+            monImageAléatoireStatique.setAttribute('alt', 'emplacement predefini de l\' image');
+            monImageAléatoireStatique.setAttribute('height', '100');
+            monImageAléatoireStatique.setAttribute('width', '100');
+            //
+            document.getElementsByTagName("body")[0].appendChild(monImageAléatoireStatique);
+        </script>
+    </main>
+    <hr>
+    <footer>
+        <a href="http://copyright.be" target="_blank">Copyright © 2020 - Tous droits réservés</a><br />
+        <a href="mailto:t.lejeune@ludus-academie.com?subject=test_envoi" ....> envoyez-moi un mail pour plus d'information</a>
+    </footer>
+
+</body></html>
